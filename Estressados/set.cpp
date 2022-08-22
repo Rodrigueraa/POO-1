@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include "cout.hpp"
 using namespace std;
 
 
@@ -35,9 +36,9 @@ vector<int> repetidos(vector<int> x)
 
 int main()
 {
-    vector<int> x {1, 2, 4, 4, 6, 3, 2, 4, 7};
-    x = repetidos(x);
+    vector<int> x {1, 2, 4, 4, 6, 3, 2, 4, 7}, y, z;
+    y = repetidos(x);
+    z = unicos(x);
 
-    for(auto a : x)
-        cout << a << " ";
+    cout << x << endl << y << endl << z << endl;
 }

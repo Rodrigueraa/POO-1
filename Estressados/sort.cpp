@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include "cout.hpp"
 using namespace std;
 
 void sort(vector<int> &x)
@@ -52,7 +53,7 @@ int main()
 {
     vector<int> x {1, -3, -4, 6, 7, 2};
     sort_stress(x);
-    for(auto a : x)
-        cout << a << " ";
-        cout << endl;
+    cout << x;
+    sort(x);
+    cout << x;
 }
